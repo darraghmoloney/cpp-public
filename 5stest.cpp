@@ -1,3 +1,9 @@
+/* This is a console program that checks a sequence of numbers
+*  taken in by user input, and returns how many of them
+*  do and don't contain the number 5.
+*  This is based on a Codewars website code challenge.
+*/
+
 #include <iostream>
 
 int result;

@@ -1,5 +1,6 @@
 /* A console implementation of a 3 x 3 tic-tac-toe board game.
-*
+*  This is a structured-programming approach, an object
+*  based approach might be better.
 */
 
 #include <iostream>
@@ -12,7 +13,8 @@ int column;
 char playerObject;
 int moveCount = 0;
 
-
+//generate the board and set the blank spaces
+//to the character '-'
 void makeBoard() {
 
 	for (int x = 0; x < 3; x++) {
@@ -22,7 +24,9 @@ void makeBoard() {
 	}
 }
 
-
+//loop through the 2d array to print the board
+//nested loop prints the row's columns
+//before moving to the next row
 void printBoard() {
 
 	std::cout << "Board:\n";
@@ -34,6 +38,9 @@ void printBoard() {
 	}
 }
 
+//change the player object to print the correct
+//character (the first player always uses X and
+//the second 2)
 char setObject() {
 
 	if (playerNumber == 1) {
@@ -46,11 +53,20 @@ char setObject() {
 	return playerObject;
 }
 
+//more elegant way to handle exit condition
+//using boolean in the while loop to run
+//the program
 void exitGame() {
 	isGameOver == true;
+	
+	//note this exit 0 is a bad way
+	//to do it!
 	exit(0);
 }
 
+//the function to put the object in the right place
+// - should check if there is an object there
+// and prompt re-entry of input if so
 void placeObject() {
 
 	int userInput;
@@ -109,6 +125,7 @@ void placeObject() {
 	}
 }
 
+//switch player which is also needed to change the character
 void changePlayer() {
 	
 	if (isGameOver != true) {

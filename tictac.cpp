@@ -1,3 +1,7 @@
+/* A console implementation of a 3 x 3 tic-tac-toe board game.
+*
+*/
+
 #include <iostream>
 
 char board[3][3];

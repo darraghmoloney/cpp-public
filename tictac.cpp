@@ -7,7 +7,7 @@
 
 //universal variables are generally a bad thing!
 //should be refactored into classes or passed by reference
-//functions
+//functions, but this is a concept-demonstration program
 char board[3][3];
 int playerNumber;
 bool isGameOver = false;

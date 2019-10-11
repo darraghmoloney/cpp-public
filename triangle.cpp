@@ -1,3 +1,9 @@
+/* This program takes in 3 inputs from the user
+* which are line lengths of a polygon and tells
+* the user if the line lengths can make a valid
+* triangle shape or not.
+*/
+
 #include <iostream>
 #include <cmath>
 #include <vector>

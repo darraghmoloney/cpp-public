@@ -5,6 +5,9 @@
 
 #include <iostream>
 
+//universal variables are generally a bad thing!
+//should be refactored into classes or passed by reference
+//functions
 char board[3][3];
 int playerNumber;
 bool isGameOver = false;

@@ -1,5 +1,13 @@
+/*  This program takes in two numbers as user input and calls a recursive function
+*   to calculate the number raised to the power (exponent).
+*
+*   It is based on a Khan Academy JavaScript challenge, but adapted for C++.
+*/
+
 #include <iostream>
 
+//The function takes in ints but must return a double
+//for the case of negative powers
 double recurPower(int num, int power) {
 
     //base case x^0 is 1

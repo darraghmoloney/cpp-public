@@ -25,6 +25,8 @@ double recurPower(int num, int power) {
     //if power is odd, return
     //recursive of x * x^n-1
     if(power % 2 == 1) {
+        //explicit cast to double ensures no
+        //loss of information due to truncation of int
         return static_cast<double>(num) * recurPower(num, (power-1));
     }
 

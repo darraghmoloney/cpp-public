@@ -1,4 +1,4 @@
-/* This program uses deques and iterators
+/* This program uses lists and iterators
  * to implement a music-player style class
  * which displays the current song, can move
  * backwards and forwards in the playlist,

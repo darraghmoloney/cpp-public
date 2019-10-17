@@ -27,9 +27,9 @@ class Song {
     friend std::ostream &operator<<(std::ostream &os, const Song &s);
     
 public:
-		//must provide default values to constructor, as
-		//deque might contain uninitialized objects,
-		//which could cause problems
+	//must provide default values to constructor, as
+	//list might contain uninitialized objects,
+	//which could cause problems
     Song() : artist {"Unknown Artist"}, name {"Unknown"},
         rating {3}
         {};

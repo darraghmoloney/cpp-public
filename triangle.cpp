@@ -2,6 +2,10 @@
 * which are line lengths of a polygon and tells
 * the user if the line lengths can make a valid
 * triangle shape or not.
+*
+* It then returns three co-ordinates to map
+* the triangle shape, with the first point
+* set to the origin, (0,0).
 */
 
 #include <iostream>

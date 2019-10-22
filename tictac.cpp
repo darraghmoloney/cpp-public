@@ -43,7 +43,7 @@ void printBoard() {
 
 //change the player object to print the correct
 //character (the first player always uses X and
-//the second 2)
+//the second O)
 char setObject() {
 
 	if (playerNumber == 1) {

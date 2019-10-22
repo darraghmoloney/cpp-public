@@ -52,11 +52,15 @@ void promptTriangle() {
 		std::cout << lengthA << " " << lengthB << " and "
 			<< lengthC << " cannot make a triangle.\n";
 	}
-
+	//the third points must be calculated - first is origin,
+	//second can be inferred from length
 	int *points = getThirdPoints(lengthA, lengthB, lengthC);
-
+	
+	//setting the first point to (0,0) - arbitrary
 	std::cout << "1st co-ords: " << 0 << " " << 0 << "\n";
 	
+	//the second point is set to a line along the x-axis, so
+	//it is equal to the length of the line and zero (len, 0)
 	std::cout << "2nd co-ords: " << lengthB << " " << 0 << "\n";
 
 	std::cout << "3rd co-ords: ";
@@ -71,6 +75,8 @@ void promptTriangle() {
 
 }
 
+//returns an array, which is technically an int pointer
+//in C++
 int* getThirdPoints (int lengthA, int lengthB, int lengthC) {
 
 	static int pointC[] {};	
